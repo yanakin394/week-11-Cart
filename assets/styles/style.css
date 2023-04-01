@@ -1,0 +1,45 @@
+h1 {
+    margin-left: 15%;
+}
+.shopping_list {
+    width: 650px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.item_one,
+.item_two,
+.item_three,
+.item_four{
+    border: 1px solid grey;
+    padding-left: 2%;
+}
+.item_description {
+    font-size: smaller;
+    color: grey;
+}
+.item_img {
+    width: 100px;
+    height: 100px;
+}
+.final {
+    width: 650px;
+    margin: 2% 5% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.button {
+    width: fit-content;
+    height: 40px;
+    background-color: rgb(18, 159, 224);
+    color: white;
+    border-style: none;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+.total {
+    display: flex;
+    flex-direction: column;
+}
