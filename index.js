@@ -8,3 +8,17 @@ const sum = (firstPurchase, secondPurchase, thirdPurchase, fourthPurchase) => {
 
 }
 console.log(sum);
+
+const total = document.getElementById('totalValue');
+total.textContent = sum;
+
+const discountSum = (sum) => {
+    return sum * 0.8;
+}
+
+const applyDiscount = document.getElementById('discountButton');
+applyDiscount.addEventListener("click", discountSum => {
+    total.textContent = discountSum;
+})
+
+console.log(discountSum);
