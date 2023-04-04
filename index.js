@@ -7,20 +7,18 @@ const sum = (firstPurchase, secondPurchase, thirdPurchase, fourthPurchase) => {
     return firstPurchase + secondPurchase + thirdPurchase + fourthPurchase;
 }
 const totalSum = sum(firstPurchase, secondPurchase, thirdPurchase, fourthPurchase);
-console.log(totalSum);
+console.log(totalSum); //для проверки
 
 const total = document.getElementById('totalValue');
 total.textContent = totalSum + ' руб.';
 
-const discountTotalSum = (totalSum) => {
+const discountTotalSum = () => {
     return totalSum * 0.8;
+    total.textContent = discountTotalSum + ' руб.';
 }
-const discountTotal = discountTotalSum(totalSum);
-console.log(discountTotal);
+/* const discountTotal = discountTotalSum(totalSum);
+console.log(discountTotal); //для проверки */
 
-/* const applyDiscount = document.getElementById('discountButton');
-applyDiscount.addEventListener("click", discountTotal() => {
-    total.textContent = discountTotal + ' руб.';
-})
+const applyDiscount = document.getElementById('discountButton');
+applyDiscount.addEventListener("click", discountTotalSum)
 
-console.log(total); */
