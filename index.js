@@ -13,12 +13,12 @@ const total = document.getElementById('totalValue');
 total.textContent = totalSum + ' руб.';
 
 const discountTotalSum = () => {
-    return totalSum * 0.8;
-    total.textContent = discountTotalSum + ' руб.';
+    return totalSum * 0.8;    
 }
-/* const discountTotal = discountTotalSum(totalSum);
-console.log(discountTotal); //для проверки */
 
 const applyDiscount = document.getElementById('discountButton');
-applyDiscount.addEventListener("click", discountTotalSum)
+applyDiscount.addEventListener("click",() => {
+    const discountPrice = discountTotalSum();
+    total.textContent = discountPrice + ' руб.';
+});
 
